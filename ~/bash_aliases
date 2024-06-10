@@ -1,0 +1,38 @@
+# xampp
+alias xampp='sudo service apache2 stop && ./xampp.sh'
+
+# laravel new
+laravel_fun() {
+  cd Projects/ && laravel new "$1"
+}
+
+alias laravel='laravel_fun' 
+
+# laravel commands
+
+alias model="php artisan make:model"
+
+controller_fun() {
+  php artisan make:controller "$1"Controller
+}
+alias controller='controller_fun'
+
+migration_fun() {
+  php artisan make:migration create_"$1"_table
+
+}
+
+alias migration='migration_fun' 
+
+alias serve="php artisan serve"
+
+alias refresh="php artisan migrate:refresh"
+alias fresh="php artisan migrate:fresh"
+
+#mailhog
+
+alias mailhog="~/go/bin/MailHog"
+
+# after clone laravel
+
+alias laraclone="composer i && cp .env.example .env && npm i && php artisan key:generate && php artisan migrate"
