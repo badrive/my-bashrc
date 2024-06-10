@@ -1,0 +1,8 @@
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+#banner
+
+figlet -f slant -c "LionsGeek" | lolcat
+figlet -f digital -c "coding school 2" | lolcat
+
+printf "\n"
