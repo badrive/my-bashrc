@@ -1,1 +1,1 @@
-# my-bashrc
+# nano ~/.bash_aliases
